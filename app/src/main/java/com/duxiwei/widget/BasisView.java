@@ -92,6 +92,13 @@ public class BasisView extends View {
         canvas.translate(100,100);
         canvas.drawRect(rect1,paint_red);
 
+        canvas.drawColor(Color.RED);
+        canvas.save();
+        canvas.clipRect(new Rect(100,100,800,800));
+        canvas.drawColor(Color.GREEN);
+//        canvas.restore();
+//        canvas.drawColor(Color.BLUE);
+
     }
 
     public void drawRegion(Canvas canvas,Region rgn,Paint paint){
